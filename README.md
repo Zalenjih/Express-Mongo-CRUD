@@ -32,6 +32,9 @@ Toda la aplicación se guarda en una carpeta "src" y se crean los siguientes ele
 
 # Configurar package.json
 Se agregan scripts para hacer uso de Nodemon e iniciar el servidor con comandos especificados.
+
+
 `"dev": "nodemon src/app.js"`
 
 `"start": "node src/ app.js"`
+
