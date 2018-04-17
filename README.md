@@ -24,8 +24,13 @@ Al finalizar instalar Nodemon:
 # Configuración de la carpeta del proyecto
 Toda la aplicación se guarda en una carpeta "src" y se crean los siguientes elementos:
 
-1.Carpeta libs y dentro de esta un archivo llamado "db-connection.js".
-2.Carpeta model que tendrá el mapeo a la base de datos.
-3.Carpeta routes que guardará las rutas del sitio web.
-4.Carpeta views donde se diseñarán las vistas.
-5.Archivo "app.js" que es el archivo principal para el arranque de la aplicación.
+1. Carpeta libs y dentro de esta un archivo llamado "db-connection.js".
+2. Carpeta model que tendrá el mapeo a la base de datos.
+3. Carpeta routes que guardará las rutas del servidor.
+4. Carpeta views donde se diseñarán las vistas html que estará procesado con el motor EJS.
+5. Archivo "app.js" que es el archivo principal para el arranque de la aplicación.
+
+# Configurar package.json
+Se agregan scripts para hacer uso de Nodemon e iniciar el servidor con comandos especificados.
+`"dev": "nodemon src/app.js"`
+`"start": "node src/ app.js"`
