@@ -1,30 +1,32 @@
 {
-  "name": "Express-Mongo-CRUD",
-  "version": "1.0.0",
-  "description": "CRUD simple utilizando Node.js/Express y MondoDb",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Zalenjih/Express-Mongo-CRUD.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Zalenjih/Express-Mongo-CRUD/issues"
-  },
-  "homepage": "https://github.com/Zalenjih/Express-Mongo-CRUD#readme",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "ejs": "^2.5.8",
-    "express": "^4.16.3",
-    "mongoose": "^5.0.15",
-    "morgan": "^1.9.0"
-  },
-  "devDependencies": {
-    "nodemon": "^1.17.3"
-  }
+    "name": "Express-Mongo-CRUD",
+    "version": "1.0.0",
+    "description": "CRUD simple utilizando Node.js/Express y MondoDb",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon src/app.js",
+        "start": "node src/app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Zalenjih/Express-Mongo-CRUD.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Zalenjih/Express-Mongo-CRUD/issues"
+    },
+    "homepage": "https://github.com/Zalenjih/Express-Mongo-CRUD#readme",
+    "dependencies": {
+        "body-parser": "^1.18.2",
+        "ejs": "^2.5.8",
+        "express": "^4.16.3",
+        "mongoose": "^5.0.15",
+        "morgan": "^1.9.0"
+    },
+    "devDependencies": {
+        "nodemon": "^1.17.3"
+    }
 }

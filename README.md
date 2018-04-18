@@ -38,3 +38,16 @@ Se agregan scripts para hacer uso de Nodemon e iniciar el servidor con comandos 
 
 `"start": "node src/ app.js"`
 
+# Arrancar el servidor
+Con la consola ubicada en la carpeta del proyecto se ejecutan los siguientes comandos:
+
+Para iniciar el servidor
+
+`npm start`
+
+Para iniciar el nodemon
+
+`npm run dev
+
+
+`
