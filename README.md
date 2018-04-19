@@ -49,48 +49,11 @@ Para iniciar el nodemon
 `npm run dev`
 
 # Comenzando a desarrollar
+1. Lo primero es configurar el archivo "app.js" para que tome un puerto, se implemente el motor de plantillas, se congure el body-parser y morgan, se vinculen las rutas de las diferentes páginas que se usarán y activar la aplicación por medio del puerto específicado.
 
-Se obienten todas dependencias y rutas en el archivo principal "app.js".
+2. Después se crea el archivo "task.js" que tendrá la conexión y el mapeo a la base de datos con la colección indicada.
 
-`const express = require("express");
-const logger = require("morgan");
-const app = express();
-const bodyParser = require("body-parser");
-const indexRoutes = require('./routes/index');
-const path = require("path");`
+3. En el archivo "index.js" de la carpeta routes, se especifica el modelo todando el archvo "task.js" y se crean las operaciones de base de datos tomando en cuenta que las operaciones para actualizar, borrar y crear se indica con una nueva ruta que es descrita junto con el formulario de la págnina "index.ejs" que será nuestra vista.
 
-
-Se configura el puerto
-
-`app.set('port', process.env.PORT || 3001);`
-
-
-Se configura el motor de plantillas
-
-`//Que entienda en envio de paginas ejs
-app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");`
-
-
-Se configura el apartado de Middlewares
-
-`//Middlewares
-app.use(logger("dev"));
-app.use(bodyParser.urlencoded({
-    extended: false
-}));`
-
-
-Agregamos las rutas para la página principal
-
-`//Routes
-app.use('/', indexRoutes);`
-
-
-Por último se hace uso del puerto para la aplicación y se manda un mensaje en el servidor de aplicaciones
-
-`app.listen(app.get('port'), () => {
-    console.log("Server on port", app.get('port'));
-});`
-
-
+# Notas
+El repositorio tiene un archivo "db-connection.js" en la carpeta libs, sin embargo no se podía implementar de esta manera separada con el método utilizado ya que se trabajó con una nueva versión de mongoose.
