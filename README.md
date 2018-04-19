@@ -56,8 +56,5 @@ Para iniciar el nodemon
 3. En el archivo "index.js" de la carpeta routes, se especifica el modelo todando el archvo "task.js" y se crean las operaciones de base de datos tomando en cuenta que las operaciones para actualizar, borrar y crear se indica con una nueva ruta que es descrita junto con el formulario de la págnina "index.ejs" que será nuestra vista.
 
 # Notas
-<<<<<<< HEAD
 El repositorio tiene un archivo "db-connection.js" en la carpeta libs, sin embargo no se podía implementar de esta manera separada con el método utilizado ya que se trabajó con una nueva versión de mongoose.
-=======
-El repositorio tiene un archivo "db-connection.js" en la carpeta libs, sin embargo no se podía implementar de esta manera separada con el método utilizado ya que se trabajó con una nueva versión de mongoose.
->>>>>>> 331f58ca025e12b07cce5b4dce78a90a33d8c5a0
+
